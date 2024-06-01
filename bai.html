@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Cho một mảng [1,7,5,9,2,6,7,9,7]
+        // - Cho người dùng nhập vào 1 số và in ra số lần xuất hiện của số đó trong mảng.
+
+        //- In ra các phần tử trong mảng.
+
+        //  let numbers = [1, 7, 5, 9, 2, 6, 7, 9, 7];
+        //  for (let i = 0; i < numbers.length; i++) {
+        //  console.log("các phần tử của mảng " + i + " là " + numbers[i])
+        //  }
+
+        //- In ra các phần tử chẵn trong mảng.
+
+        //  let numbers = [1, 7, 5, 9, 2, 6, 7, 9, 7];
+        //  console.log("Các phần tử chẵn trong mảng :")
+        //  for (let i = 0; i < numbers.length; i++) {
+        //    if (numbers[i] % 2 === 0) {
+        //        console.log(numbers[i]);
+        //    }
+        //       }
+
+        // - In ra các phần tử tại vị trí chẵn trong mảng.
+
+        //    let numbers = [1, 7, 5, 9, 2, 6, 7, 9, 7];
+        //    console.log("Phần tử tại vị trí chẵn là: ");
+        //    for (let i = 0; i < numbers.length; i++) {
+        //        if (i % 2 === 0) {
+        //       console.log(numbers[i] + " ");
+        //    }
+        //   }
+
+        // - Cho người dùng nhập vào 1 số và in ra số lần xuất hiện của số đó trong mảng.
+        let numbers = [1, 7, 5, 9, 2, 6, 7, 9, 7];
+        let num = +prompt("Nhập vào 1 số:");
+        let count = 0;
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] === num) {
+                count++;
+            }
+        }
+        console.log("Số lần xuất hiện của số " + num, "trong mảng là: " + count);
+    </script>
+</body>
+
+</html>
